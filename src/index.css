@@ -10,11 +10,22 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #F8F9FB;
   color: #1F2937;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-variant-ligatures: common-ligatures;
 }
 
 .font-display {
@@ -181,4 +192,31 @@ body {
 
 .activity-task {
   @apply bg-orange-100 text-orange-800;
+}
+/* Image rendering optimizations */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Smooth rendering for all elements */
+* {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Text selection improvements */
+::selection {
+  background-color: rgba(91, 71, 224, 0.2);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: rgba(91, 71, 224, 0.2);
+  text-shadow: none;
 }

@@ -14,14 +14,14 @@ const Layout = () => {
     setSidebarOpen(false)
   }
 
-  return (
-    <div className="flex h-screen bg-background">
+return (
+    <div className="flex h-screen bg-background subpixel-antialiased">
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header onMenuToggle={toggleSidebar} />
         
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto transform-gpu">
           <div className="p-4 lg:p-6">
             <Outlet />
           </div>

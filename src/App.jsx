@@ -10,7 +10,7 @@ import Activities from '@/components/pages/Activities'
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-background font-body">
+      <div className="min-h-screen bg-background font-body subpixel-antialiased">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
