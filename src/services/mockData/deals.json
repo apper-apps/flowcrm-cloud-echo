@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "title": "Enterprise Software License",
+    "value": 45000,
+    "stage": "negotiation",
+    "contactId": 1,
+    "probability": 85,
+    "expectedCloseDate": "2024-02-15T00:00:00Z",
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "title": "Website Redesign Project",
+    "value": 12000,
+    "stage": "proposal",
+    "contactId": 4,
+    "probability": 60,
+    "expectedCloseDate": "2024-02-28T00:00:00Z",
+    "createdAt": "2024-01-18T09:15:00Z"
+  },
+  {
+    "Id": 3,
+    "title": "CRM Implementation",
+    "value": 28000,
+    "stage": "qualified",
+    "contactId": 2,
+    "probability": 70,
+    "expectedCloseDate": "2024-03-10T00:00:00Z",
+    "createdAt": "2024-01-20T16:00:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "Monthly Subscription",
+    "value": 3600,
+    "stage": "closed-won",
+    "contactId": 5,
+    "probability": 100,
+    "expectedCloseDate": "2024-01-25T00:00:00Z",
+    "createdAt": "2024-01-10T11:20:00Z"
+  },
+  {
+    "Id": 5,
+    "title": "Consulting Services",
+    "value": 8500,
+    "stage": "lead",
+    "contactId": 3,
+    "probability": 30,
+    "expectedCloseDate": "2024-03-20T00:00:00Z",
+    "createdAt": "2024-01-22T13:45:00Z"
+  },
+  {
+    "Id": 6,
+    "title": "Training Package",
+    "value": 5500,
+    "stage": "proposal",
+    "contactId": 8,
+    "probability": 65,
+    "expectedCloseDate": "2024-02-20T00:00:00Z",
+    "createdAt": "2024-01-25T08:30:00Z"
+  },
+  {
+    "Id": 7,
+    "title": "Custom Development",
+    "value": 35000,
+    "stage": "qualified",
+    "contactId": 6,
+    "probability": 55,
+    "expectedCloseDate": "2024-03-15T00:00:00Z",
+    "createdAt": "2024-01-28T14:15:00Z"
+  },
+  {
+    "Id": 8,
+    "title": "Support Contract",
+    "value": 15000,
+    "stage": "negotiation",
+    "contactId": 7,
+    "probability": 80,
+    "expectedCloseDate": "2024-02-12T00:00:00Z",
+    "createdAt": "2024-01-30T09:00:00Z"
+  }
+]

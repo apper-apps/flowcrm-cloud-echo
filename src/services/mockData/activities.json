@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 1,
+    "type": "call",
+    "description": "Initial discovery call with John Smith about enterprise needs",
+    "contactId": 1,
+    "timestamp": "2024-01-15T10:30:00Z",
+    "metadata": {
+      "duration": "45 minutes",
+      "outcome": "positive"
+    }
+  },
+  {
+    "Id": 2,
+    "type": "email",
+    "description": "Sent proposal follow-up email to Sarah Johnson",
+    "contactId": 2,
+    "timestamp": "2024-01-18T14:20:00Z",
+    "metadata": {
+      "subject": "CRM Implementation Proposal",
+      "status": "opened"
+    }
+  },
+  {
+    "Id": 3,
+    "type": "meeting",
+    "description": "In-person meeting with Michael Chen to discuss requirements",
+    "contactId": 3,
+    "timestamp": "2024-01-20T09:15:00Z",
+    "metadata": {
+      "location": "Global Tech Offices",
+      "attendees": "3"
+    }
+  },
+  {
+    "Id": 4,
+    "type": "note",
+    "description": "Emily Rodriguez showed interest in design automation features",
+    "contactId": 4,
+    "timestamp": "2024-01-22T16:45:00Z",
+    "metadata": {
+      "priority": "medium",
+      "category": "product interest"
+    }
+  },
+  {
+    "Id": 5,
+    "type": "call",
+    "description": "Contract negotiation call with David Wilson",
+    "contactId": 5,
+    "timestamp": "2024-01-25T11:00:00Z",
+    "metadata": {
+      "duration": "30 minutes",
+      "outcome": "contract signed"
+    }
+  },
+  {
+    "Id": 6,
+    "type": "email",
+    "description": "Sent healthcare compliance documentation to Lisa Thompson",
+    "contactId": 6,
+    "timestamp": "2024-01-28T13:30:00Z",
+    "metadata": {
+      "subject": "Healthcare Compliance Package",
+      "attachments": "5"
+    }
+  },
+  {
+    "Id": 7,
+    "type": "meeting",
+    "description": "Product demo session with Robert Davis and Finance Pro team",
+    "contactId": 7,
+    "timestamp": "2024-01-30T14:00:00Z",
+    "metadata": {
+      "location": "Virtual",
+      "attendees": "5"
+    }
+  },
+  {
+    "Id": 8,
+    "type": "call",
+    "description": "Training requirements discussion with Jennifer Garcia",
+    "contactId": 8,
+    "timestamp": "2024-02-01T10:15:00Z",
+    "metadata": {
+      "duration": "25 minutes",
+      "outcome": "requirements documented"
+    }
+  },
+  {
+    "Id": 9,
+    "type": "task",
+    "description": "Completed proposal preparation for Creative Studio website project",
+    "contactId": 4,
+    "timestamp": "2024-02-02T17:30:00Z",
+    "metadata": {
+      "task_type": "proposal",
+      "status": "completed"
+    }
+  },
+  {
+    "Id": 10,
+    "type": "email",
+    "description": "Follow-up email sent to John Smith regarding contract terms",
+    "contactId": 1,
+    "timestamp": "2024-02-03T09:45:00Z",
+    "metadata": {
+      "subject": "Contract Terms Discussion",
+      "status": "delivered"
+    }
+  },
+  {
+    "Id": 11,
+    "type": "note",
+    "description": "Sarah Johnson requested additional security features information",
+    "contactId": 2,
+    "timestamp": "2024-02-03T15:20:00Z",
+    "metadata": {
+      "priority": "high",
+      "category": "feature request"
+    }
+  },
+  {
+    "Id": 12,
+    "type": "meeting",
+    "description": "Technical requirements review with Health Plus development team",
+    "contactId": 6,
+    "timestamp": "2024-02-04T11:30:00Z",
+    "metadata": {
+      "location": "Health Plus HQ",
+      "attendees": "4"
+    }
+  }
+]

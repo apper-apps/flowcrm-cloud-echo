@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "title": "Follow up on Enterprise deal",
+    "description": "Call John Smith to discuss contract terms and pricing",
+    "dueDate": "2024-02-05T09:00:00Z",
+    "priority": "high",
+    "status": "pending",
+    "contactId": 1,
+    "dealId": 1
+  },
+  {
+    "Id": 2,
+    "title": "Prepare proposal for Website Redesign",
+    "description": "Create detailed proposal with timeline and deliverables",
+    "dueDate": "2024-02-08T17:00:00Z",
+    "priority": "medium",
+    "status": "in-progress",
+    "contactId": 4,
+    "dealId": 2
+  },
+  {
+    "Id": 3,
+    "title": "Demo presentation for TechStart",
+    "description": "Schedule and prepare product demo for Sarah Johnson",
+    "dueDate": "2024-02-10T14:00:00Z",
+    "priority": "high",
+    "status": "pending",
+    "contactId": 2,
+    "dealId": 3
+  },
+  {
+    "Id": 4,
+    "title": "Send thank you note",
+    "description": "Send thank you note to David Wilson for signed contract",
+    "dueDate": "2024-02-02T10:00:00Z",
+    "priority": "low",
+    "status": "completed",
+    "contactId": 5,
+    "dealId": 4
+  },
+  {
+    "Id": 5,
+    "title": "Research Global Tech requirements",
+    "description": "Research Michael Chen's company needs and pain points",
+    "dueDate": "2024-02-12T16:00:00Z",
+    "priority": "medium",
+    "status": "pending",
+    "contactId": 3,
+    "dealId": 5
+  },
+  {
+    "Id": 6,
+    "title": "Training session planning",
+    "description": "Plan curriculum for EduTech Academy training package",
+    "dueDate": "2024-02-15T11:00:00Z",
+    "priority": "medium",
+    "status": "pending",
+    "contactId": 8,
+    "dealId": 6
+  },
+  {
+    "Id": 7,
+    "title": "Contract review",
+    "description": "Review support contract terms with Robert Davis",
+    "dueDate": "2024-02-06T15:00:00Z",
+    "priority": "high",
+    "status": "pending",
+    "contactId": 7,
+    "dealId": 8
+  },
+  {
+    "Id": 8,
+    "title": "Technical requirements gathering",
+    "description": "Meet with Health Plus team to gather technical requirements",
+    "dueDate": "2024-02-18T13:00:00Z",
+    "priority": "medium",
+    "status": "pending",
+    "contactId": 6,
+    "dealId": 7
+  },
+  {
+    "Id": 9,
+    "title": "Quarterly review meeting",
+    "description": "Schedule quarterly business review with existing clients",
+    "dueDate": "2024-02-20T10:00:00Z",
+    "priority": "low",
+    "status": "pending",
+    "contactId": null,
+    "dealId": null
+  },
+  {
+    "Id": 10,
+    "title": "Update CRM data",
+    "description": "Clean up and update contact information in CRM system",
+    "dueDate": "2024-02-01T12:00:00Z",
+    "priority": "low",
+    "status": "completed",
+    "contactId": null,
+    "dealId": null
+  }
+]
