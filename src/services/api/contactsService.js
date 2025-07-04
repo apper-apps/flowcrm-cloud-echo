@@ -59,7 +59,62 @@ export const contactsService = {
       throw new Error('Contact not found')
     }
     
-    contacts.splice(index, 1)
+contacts.splice(index, 1)
     return true
+  },
+
+  async bulkCreate(contactsData) {
+    await delay(800)
+    
+    const results = {
+      successful: [],
+      failed: []
+    }
+    
+    const maxId = contacts.length > 0 ? Math.max(...contacts.map(c => c.Id)) : 0
+    let currentId = maxId + 1
+    
+    contactsData.forEach((contactData, index) => {
+      try {
+        // Validate required fields
+        if (!contactData.name || !contactData.email) {
+          results.failed.push({
+            row: index + 1,
+            data: contactData,
+            error: 'Name and email are required'
+          })
+          return
+        }
+        
+        // Check for duplicate email
+        const existingContact = contacts.find(c => c.email.toLowerCase() === contactData.email.toLowerCase())
+        if (existingContact) {
+          results.failed.push({
+            row: index + 1,
+            data: contactData,
+            error: 'Email already exists'
+          })
+          return
+        }
+        
+        const newContact = {
+          Id: currentId++,
+          ...contactData,
+          createdAt: new Date().toISOString(),
+          lastActivity: new Date().toISOString()
+        }
+        
+        contacts.push(newContact)
+        results.successful.push(newContact)
+      } catch (error) {
+        results.failed.push({
+          row: index + 1,
+          data: contactData,
+          error: error.message
+        })
+      }
+    })
+    
+    return results
   }
 }

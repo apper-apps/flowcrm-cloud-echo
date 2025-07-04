@@ -10,16 +10,20 @@ import Loading from '@/components/ui/Loading'
 import Error from '@/components/ui/Error'
 import Empty from '@/components/ui/Empty'
 import ContactForm from '@/components/organisms/ContactForm'
+import ImportWizard from '@/components/organisms/ImportWizard'
+import ExportModal from '@/components/organisms/ExportModal'
 import { contactsService } from '@/services/api/contactsService'
 
 const Contacts = () => {
   const [contacts, setContacts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
-  const [searchTerm, setSearchTerm] = useState('')
+const [searchTerm, setSearchTerm] = useState('')
   const [statusFilter, setStatusFilter] = useState('all')
   const [showForm, setShowForm] = useState(false)
   const [editingContact, setEditingContact] = useState(null)
+  const [showImportWizard, setShowImportWizard] = useState(false)
+  const [showExportModal, setShowExportModal] = useState(false)
 
   useEffect(() => {
     loadContacts()
@@ -108,15 +112,33 @@ const Contacts = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-display font-bold text-text-primary">Contacts</h1>
-          <p className="text-text-secondary">Manage your customer relationships</p>
+<p className="text-text-secondary">Manage your customer relationships</p>
         </div>
-        <Button
-          onClick={() => setShowForm(true)}
-          className="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary"
-        >
-          <ApperIcon name="Plus" className="w-4 h-4 mr-2" />
-          Add Contact
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-2">
+          <Button
+            onClick={() => setShowImportWizard(true)}
+            variant="outline"
+            className="hover:border-primary hover:text-primary"
+          >
+            <ApperIcon name="Upload" className="w-4 h-4 mr-2" />
+            Import CSV
+          </Button>
+          <Button
+            onClick={() => setShowExportModal(true)}
+            variant="outline"
+            className="hover:border-primary hover:text-primary"
+          >
+            <ApperIcon name="Download" className="w-4 h-4 mr-2" />
+            Export
+          </Button>
+          <Button
+            onClick={() => setShowForm(true)}
+            className="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary"
+          >
+            <ApperIcon name="Plus" className="w-4 h-4 mr-2" />
+            Add Contact
+          </Button>
+        </div>
       </div>
 
       {/* Filters */}
@@ -224,11 +246,25 @@ const Contacts = () => {
       )}
 
       {/* Contact Form Modal */}
-      <ContactForm
+<ContactForm
         isOpen={showForm}
         onClose={handleFormClose}
         contact={editingContact}
         onSave={handleFormSave}
+      />
+      
+      {/* Import Wizard */}
+      <ImportWizard
+        isOpen={showImportWizard}
+        onClose={() => setShowImportWizard(false)}
+        onComplete={handleFormSave}
+      />
+      
+      {/* Export Modal */}
+      <ExportModal
+        isOpen={showExportModal}
+        onClose={() => setShowExportModal(false)}
+        contacts={contacts}
       />
     </div>
   )
