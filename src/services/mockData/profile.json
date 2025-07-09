@@ -1,0 +1,10 @@
+{
+  "Id": 1,
+  "name": "John Doe",
+  "email": "john.doe@flowcrm.com",
+  "role": "Sales Manager",
+  "department": "Sales",
+  "avatar": null,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

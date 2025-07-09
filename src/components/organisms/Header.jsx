@@ -1,12 +1,13 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import ApperIcon from '@/components/ApperIcon'
 import Button from '@/components/atoms/Button'
 
 const Header = ({ onMenuToggle }) => {
   const location = useLocation()
+  const navigate = useNavigate()
   
-  const getPageTitle = () => {
+const getPageTitle = () => {
     const path = location.pathname
     switch (path) {
       case '/':
@@ -19,6 +20,8 @@ const Header = ({ onMenuToggle }) => {
         return 'Tasks'
       case '/activities':
         return 'Activities'
+      case '/profile':
+        return 'Profile'
       default:
         return 'FlowCRM'
     }
@@ -57,11 +60,14 @@ const Header = ({ onMenuToggle }) => {
             className="text-text-secondary hover:text-text-primary"
           >
             <ApperIcon name="Bell" className="w-5 h-5" />
-          </Button>
+</Button>
           
-          <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+          <button
+            onClick={() => navigate('/profile')}
+            className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center hover:shadow-lg transition-shadow duration-200"
+          >
             <ApperIcon name="User" className="w-4 h-4 text-white" />
-          </div>
+          </button>
         </div>
       </div>
     </header>
